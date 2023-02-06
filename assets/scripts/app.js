@@ -10,7 +10,7 @@ function createAndWriteOutput(operator, resultBeforeCalc, calcNumber ){
     outputResult(currentResult, calcDescription);
 
 }
-
+// xd
 function add() {
     const enteredNumber = parsingUserInputValue()
     const initialResult = currentResult
