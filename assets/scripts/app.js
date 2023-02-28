@@ -53,7 +53,7 @@ function multiply(){
     createAndWriteOutput("*", initialResult, enteredNumber)
     writeToLog("multiply", initialResult, enteredNumber, currentResult )
 }
-
+//hyh
 function devide(){
     const enteredNumber = parsingUserInputValue()
     const initialResult = currentResult
