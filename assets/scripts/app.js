@@ -1,6 +1,6 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
-let logEntries =
+let logEntries = []
 
 function parsingUserInputValue(){
     return parseInt(userInput.value)
@@ -34,7 +34,7 @@ function add() {
     const initialResult = currentResult
     currentResult += enteredNumber
     createAndWriteOutput("+", initialResult, enteredNumber)
-    writeToLog("ADD", initialResult, enteredNumber,  )
+    writeToLog("ADD", initialResult, enteredNumber, currentResult )
 } 
 
 
@@ -43,7 +43,7 @@ function subtract(){
     const initialResult = currentResult
     currentResult -=  enteredNumber
     createAndWriteOutput("-", initialResult, enteredNumber)
-    writeToLog("subtract", initialResult, enteredNumber,  )
+    writeToLog("subtract", initialResult, enteredNumber, currentResult )
 }
 
 function multiply(){
@@ -51,7 +51,7 @@ function multiply(){
     const initialResult = currentResult
     currentResult *= enteredNumber
     createAndWriteOutput("*", initialResult, enteredNumber)
-    writeToLog("multiply", initialResult, enteredNumber,  )
+    writeToLog("multiply", initialResult, enteredNumber, currentResult )
 }
 
 function devide(){
@@ -59,7 +59,7 @@ function devide(){
     const initialResult = currentResult
     currentResult /= enteredNumber
     createAndWriteOutput("/", initialResult, enteredNumber)
-    writeToLog("devide", initialResult, enteredNumber,  )
+    writeToLog("devide", initialResult, enteredNumber, currentResult )
 }
 
 
